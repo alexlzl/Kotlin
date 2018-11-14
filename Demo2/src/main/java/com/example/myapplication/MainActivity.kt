@@ -136,8 +136,11 @@ class MainActivity : AppCompatActivity() {
     /**
      * 全局函数测试
      * 引入的时候可以直接使用import xxx.全局函数，这个跟java的不同；
+     *
+     * 如果不同的包作用域下，有“同名”的全局函数，则需要引入全局函数的全局路径即可；
      */
     fun test7(): String {
+        com.example.myapplication.child.testOverAllFun()
         return testOverAllFun()
     }
 

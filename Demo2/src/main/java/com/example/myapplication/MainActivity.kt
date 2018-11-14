@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
 //            test4("alex")
 //            button1.text=test5()
 //            test6()
-            button1.text = test7()
+//            button1.text = test7()
+            button1.text = test8()
         }
 
         button2.setOnClickListener {
@@ -144,4 +145,13 @@ class MainActivity : AppCompatActivity() {
         return testOverAllFun()
     }
 
+    /**
+     * 静态功能实现
+     */
+    fun test8(): String {
+       var testSingle: TestCompanionObject.TestSingle =TestCompanionObject.TestSingle
+        println(testSingle.hashCode())
+        println(TestCompanionObject.TestSingle.hashCode())
+        return TestCompanionObject.testStatic()+TestCompanionObject.staticstr+TestCompanionObject.TestSingle
+    }
 }

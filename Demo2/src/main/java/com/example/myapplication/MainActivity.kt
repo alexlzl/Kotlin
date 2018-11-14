@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var ss: String
     private var i: Int = 100;
     private lateinit var student: Student
-    private  var name: String? = null
+    private var name: String? = null
     var b: String? = null //String? 表示该 String 类型变量可为空
-    var http:HttpURLConnection?=null
+    var http: HttpURLConnection? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +26,8 @@ class MainActivity : AppCompatActivity() {
             //            test3()
 //            test4("alex")
 //            button1.text=test5()
-            test6()
+//            test6()
+            button1.text = test7()
         }
 
         button2.setOnClickListener {
@@ -118,6 +119,10 @@ class MainActivity : AppCompatActivity() {
         "alex"
 
     }
+
+    /**
+     * 懒初始化===================
+     */
     fun test6() {
 //        val name by lazy {
 //            Log.e(TAG, "初始化")
@@ -125,6 +130,15 @@ class MainActivity : AppCompatActivity() {
 //
 //        }
         Log.e(TAG, name1)
+
+    }
+
+    /**
+     * 全局函数测试
+     * 引入的时候可以直接使用import xxx.全局函数，这个跟java的不同；
+     */
+    fun test7(): String {
+        return testOverAllFun()
     }
 
 }

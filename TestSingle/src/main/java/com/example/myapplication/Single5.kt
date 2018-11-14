@@ -10,6 +10,9 @@ package com.example.myapplication
  *
  */
 class Single5 private constructor() {
+    /**
+     * 静态修饰
+     */
     companion object {
         val instance = SingletonHolder.holder
 

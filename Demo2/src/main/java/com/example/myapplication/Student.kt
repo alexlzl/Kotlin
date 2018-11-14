@@ -10,6 +10,16 @@ package com.example.myapplication
  *
  */
 class Student {
-    var age:String?=null
-    var name:String?=null
+    var age: String = "tes"
+        get() = field.toUpperCase()
+        set(value) {
+            field = value + "d"
+        }
+
+
+    var name: String = "abc"
+        get() = field.toUpperCase()
+        set(value) {
+            field = "Name: $value"
+        }
 }

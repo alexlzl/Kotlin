@@ -39,4 +39,21 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+    fun test4(view : View){
+        if(view is Button){
+            view.text=(MyClass2.CompanionName.INNER_PARAMETER == MyClass2.INNER_PARAMETER).toString()+"==="+(MyClass3.Companion.INNER_PARAMETER == MyClass3.INNER_PARAMETER).toString()
+        }
+
+    }
+
+    fun test5(view : View){
+        if(view is Button){
+            view.text=operateClass(TestObject5.Imp)
+            fun TestObject5.Imp.add(){
+                println(INNER_PARAMETER)
+            }
+            TestObject5.Imp.add()
+        }
+
+    }
 }

@@ -11,7 +11,7 @@ package com.example.myapplication
  */
 class TestObject1 {
 
-    object TestI {
+    object  TestI {
         var name = "alex=="
         fun getAge(): Int {
             return 100

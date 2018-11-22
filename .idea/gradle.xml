@@ -15,7 +15,7 @@
             <option value="$PROJECT_DIR$/Demo5" />
             <option value="$PROJECT_DIR$/Demo6" />
             <option value="$PROJECT_DIR$/Demo7" />
-            <option value="$PROJECT_DIR$/单例" />
+            <option value="$PROJECT_DIR$/TestSingleInstance" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

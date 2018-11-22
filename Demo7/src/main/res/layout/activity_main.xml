@@ -12,7 +12,21 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="内联函数1"
+        android:text="object1"
+        />
+    <Button
+        android:onClick="test2"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="object2"
         />
 
+    <Button
+        android:onClick="test3"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="object3"
+        />
 </LinearLayout>

@@ -13,6 +13,10 @@ interface MyInterface {
     fun operateVariable():String
 }
 
+interface TestInter{
+    fun test():String
+}
+
 fun operateClass(interfaceObject: MyInterface) :String= interfaceObject.operateVariable()
 
 class TestObject5 {
@@ -23,5 +27,16 @@ class TestObject5 {
             //do something...
             return "object========"
         }
+    }
+
+    object Impl:TestInter{
+        override fun test(): String {
+            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        }
+
+    }
+
+    fun test(test:TestInter){
+
     }
 }

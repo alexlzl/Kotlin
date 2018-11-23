@@ -56,4 +56,12 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    fun test6(){
+        TestObject11().sex
+        //定义的是TestObject11的伴生对象
+       var o= TestObject11
+        o.name
+        o.testName()
+    }
 }

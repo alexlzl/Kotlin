@@ -9,3 +9,19 @@ package com.example.myapplication
  *
  *
  */
+class TestObject11{
+     var sex="man"
+    companion object Name {
+        var name="alex"
+        val age=100
+        fun testName():String{
+            return "gaga"
+        }
+    }
+
+
+    object Age{
+        var age=100
+    }
+
+}

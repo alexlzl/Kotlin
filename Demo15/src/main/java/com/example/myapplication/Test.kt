@@ -21,9 +21,12 @@ open class A {
         print("A")
     }
 
-    fun a() {
+   open fun a() {
         print("a")
     }
+}
+interface AA{
+    open fun a()
 }
 
 interface B {
@@ -35,17 +38,16 @@ interface B {
         print("b")
     }
 
-    fun c()
 }
 
-class C : A(), B {
-    override fun c() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+class C : A(),B ,AA{
+
 
     // 编译器要求覆盖 f()：
     override fun f() {
         super<A>.f() // 调用 A.f()
         super<B>.f() // 调用 B.f()
     }
+
+    override fun a(){}
 }

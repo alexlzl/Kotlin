@@ -22,7 +22,7 @@ package com.example.myapplication
  */
 
 //在Kotlin 1.1之前,该规则更加严格:子类必须在密封类的内部
-sealed class Expr2 {
+ sealed class Expr2 {
     class Const(val number: Double) : Expr2()
     class Sum(val e1: Expr2, val e2: Expr2) : Expr2()
     object NotANumber : Expr2()
@@ -44,6 +44,8 @@ fun eval(expr: Expr): Double = when(expr) {
 }
 class Test2{
 
+    fun t(){
+    }
 }
 fun test2(str:String){
     when (str){

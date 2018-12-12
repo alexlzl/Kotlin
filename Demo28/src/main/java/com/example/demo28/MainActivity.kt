@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
 //            view.text=Test1()::test1.name
 
 
-            Test6().test(Person())
+//            Test6().test(Person())
+            Test7().test1()
         }
 
     }

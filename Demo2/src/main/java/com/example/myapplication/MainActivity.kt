@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private var i: Int = 100;
     private lateinit var student: Student
     private var name: String? = null
+    lateinit var sss:String
     var b: String? = null //String? 表示该 String 类型变量可为空
     var http: HttpURLConnection? = null
 
@@ -141,7 +142,7 @@ class MainActivity : AppCompatActivity() {
      * 如果不同的包作用域下，有“同名”的全局函数，则需要引入全局函数的全局路径即可；
      */
     fun test7(): String {
-        com.example.myapplication.child.testOverAllFun()
+        com.example.myapplication.child1.testOverAllFun()
         return testOverAllFun()
     }
 

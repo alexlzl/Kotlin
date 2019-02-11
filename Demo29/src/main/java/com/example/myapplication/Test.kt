@@ -9,7 +9,7 @@ package com.example.myapplication
  *
  *
  */
-class Test {
+class Test :MainActivity(){
     /**
      * 遍历元素
      */
